@@ -1,5 +1,5 @@
 /* colores base: principal = #527AA4
-secundarios = #7CA4CE, #007CFF, #57411A, #A48652 */
+secundarios = #7CA4CE, #007CFF, #57411A, #A48652, #FDFDFD */
 
 @font-face {
     font-family: 'Oswald';
@@ -23,15 +23,63 @@ secundarios = #7CA4CE, #007CFF, #57411A, #A48652 */
 body {
     font-family: 'Roboto';
     font-size: 1.25em;
-    background: #3E4848;
+    background: #527AA4;
+    position: relative;
 }
-div:nth-child(1){
-    height: 100px;
-    width: 100px;
-    background: #927360;
+
+header{
+    font-family: 'Oswald';
+    width: 100%;
+    position: relative;
+    color: white;
 }
-div:nth-child(2){
-    height: 100px;
-    width: 100px;
-    background: #FDFDFD;
+header div#header{
+    width: 38%;
+    border-bottom: 2px solid white;
+}
+header figure{
+    display: inline-block;
+    margin: 10px;
+}
+header h1{
+    display: inline-block;
+    font-size: 2em; 
+    margin: 0px;
+    line-height: 110px; 
+}
+header h1:before{
+    content: '<JM-DEVELOPER/>';
+}
+header nav{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40%;
+    border-bottom: 2px solid white;
+}
+header nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 110px; 
+}
+header ul li#select_home{
+    font-family: 'icomoon';
+    font-size: 1.15em;
+}
+header ul li#select_home:before{
+    content: "\e927"
+}
+header ul li{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+@media screen and (max-width: 800px){
+    body{
+
+    }
 }

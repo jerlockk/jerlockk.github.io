@@ -95,7 +95,8 @@ div#btn-opciones{
         border: none;
     }
     header div#header h1{
-        line-height: 70px;
+        line-height: 0px;
+        margin-top: 35px;
         margin-left: 8px;
         font-size: 1.75em;
     }

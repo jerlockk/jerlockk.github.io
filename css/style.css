@@ -24,7 +24,7 @@ body {
     font-family: 'Roboto';
     font-size: 1.25em;
     background: #527AA4;
-    position: relative;
+    position: static;
 }
 
 header{
@@ -34,7 +34,7 @@ header{
     color: white;
 }
 header div#header{
-    width: 38%;
+    width: 40%;
     border-bottom: 2px solid white;
 }
 header figure{
@@ -71,15 +71,81 @@ header ul li#select_home{
 }
 header ul li#select_home:before{
     content: "\e927"
-}
+} 
 header ul li{
     display: inline-block;
     margin-right: 8px;
 }
-
+div#cerrar_nav{
+    display: none;
+}
+div#boton_nav{
+    display: none;
+}
+@media screen and (max-width: 1000px){
+    header nav{
+        width: 45%;
+    }
+    header div#header{
+        width: 45%;
+    }
+}
 
 @media screen and (max-width: 800px){
-    body{
+    header div#header{
+        width: 100%;
+        border: none;
+    }
+    header div#header figure{
+        margin: 0 8%;
+    }
+    header div#header h1{
+        font-size: 1.5em;
+        line-height: 80px;
+    }
 
+    header nav{
+        display: block;
+        border: none;
+        top: 55vh;
+        left: 4%;
+        background: #FDFDFD;
+        color: black;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        z-index: 999;
+    }
+
+    header nav ul li{
+        display: block;
+        line-height: 70px; 
+    }
+
+    div#cerrar_nav{
+        display: block;
+        font-family: 'icomoon';
+        font-size: 1em;
+    }
+    div#cerrar_nav:before{
+        content: "\e90b";
+        position: absolute;
+        top: -34px;
+        right: -34px;
+        background: #FDFDFD;
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+    div#boton_nav{
+        font-family: 'icomoon';
+        font-size: 3em;
+        color: #FDFDFD;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 4%;
+    }
+    div#boton_nav:before{
+        content: "\e910";
     }
 }

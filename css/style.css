@@ -107,7 +107,7 @@ div#boton_nav{
     header nav{
         display: block;
         border: none;
-        top: 55vh;
+        top: 410%;
         left: 4%;
         background: #FDFDFD;
         color: black;
@@ -129,8 +129,8 @@ div#boton_nav{
     div#cerrar_nav:before{
         content: "\e90b";
         position: absolute;
-        top: -34px;
-        right: -34px;
+        top: -18px;
+        right: -18px;
         background: #FDFDFD;
         padding: 15px;
         border-radius: 50%;
@@ -142,7 +142,7 @@ div#boton_nav{
         color: #FDFDFD;
         display: block;
         position: absolute;
-        bottom: 10px;
+        bottom: 40px;
         left: 4%;
     }
     div#boton_nav:before{

@@ -1,0 +1,37 @@
+/* colores base: principal = #527AA4
+secundarios = #7CA4CE, #007CFF, #57411A, #A48652 */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    src: local('?'),
+        url('../fonts/Oswald-Regular.otf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: local('?'),
+        url('../fonts/Roboto-Regular.eot'),
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    src: local('?'),
+        url('../fonts/Roboto-Bold.eot'),
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 1.25em;
+    background: #3E4848;
+}
+div:nth-child(1){
+    height: 100px;
+    width: 100px;
+    background: #927360;
+}
+div:nth-child(2){
+    height: 100px;
+    width: 100px;
+    background: #FDFDFD;
+}

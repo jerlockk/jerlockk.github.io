@@ -1,4 +1,5 @@
 $('#btn-opciones').click(function(){
-    $('nav').toggle('slow');
+    $('nav').toggle('fast');
     $('#btn-opciones').toggleClass('change');
 });
+

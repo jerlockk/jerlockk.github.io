@@ -1,9 +1,9 @@
-/* colores base: principal = #527AA4
-secundarios = #7CA4CE, #007CFF, #57411A, #A48652, #FDFDFD */
+/* colores base: principal = #107363
+secundarios = #00E6C1  */
 
 @font-face {
-    font-family: 'monserrat';
-    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-family: 'whire';
+    src: url('../fonts/WireOne.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto';
@@ -21,12 +21,12 @@ secundarios = #7CA4CE, #007CFF, #57411A, #A48652, #FDFDFD */
 body {
     font-family: 'Roboto';
     font-size: 1.25em;
-    background: #527AA4;
+    background: #107363;
     position: static;
 }
 
 header{
-    font-family: 'monserrat';
+    font-family: 'whire';
     width: 100%;
     position: relative;
     color: white;
@@ -42,7 +42,7 @@ header figure{
 }
 header h1{
     display: inline-block;
-    font-size: 2em;
+    font-size: 2.8em;
     margin: 0px;
     line-height: 100px;
     font-weight: lighter;
@@ -63,8 +63,9 @@ header nav ul{
     padding: 0px;
     list-style: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 100px;
+    max-height: 100px;
 }
 header ul li#select_home{
     font-family: 'icomoon';
@@ -86,7 +87,7 @@ div#contact_form{
     height: auto;
     width: 260px;
     background: #FDFDFD;
-    position: fixed;
+    position: absolute;
     right: 10px;
     box-shadow: 8px 8px 8px 8px rgba(105, 105, 105, 0.83);
 }
@@ -135,11 +136,62 @@ div#contact_form form input#boton{
     cursor: pointer;
     width: 60%;
 }
-div#showFooter{
-    height: 100px;
-    width: 100px;
-    background: black;
+div.showFooter{
+    height: 120px;
+    width: 120px;
+    background: #FDFDFD;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -35px;
+    left: -35px;
+    text-align: center;
+    font-family: 'icomoon';
+    font-size: 2.8em;
+    color:#007CFF;
+
 }
+div.showFooter:before{
+    content: '\f04f';
+    position: relative;
+    top: 18px;
+    right: -10px;
+}
+.circleBig{
+    position: fixed;
+    transition: all 0.4s linear;
+    height: 420px;
+    width: 420px;
+    border-radius: 50%;
+    bottom: -85px;
+    left: -85px;
+    color: white;
+    background: white;
+}
+footer{
+    background: #FDFDFD;
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    bottom: 0px;
+}
+footer p{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+/*div#number, div#email{
+    height: 120px;
+    width: 320px;
+    background: #FDFDFD;
+    border-radius: 30%;
+    margin: 50px;
+
+    text-align: center;
+    font-family: 'icomoon';
+    font-size: 2.8em;
+    color:#007CFF;
+}*/
 @media screen and (max-width: 1000px){
     header nav{
         width: 45%;
@@ -156,8 +208,8 @@ div#showFooter{
     }
     header div#header h1{
         line-height: 0px;
-        margin: 30px 0px 30px 50px;
-        font-size: 1.5em;
+        margin: 35px 0px 30px 50px;
+        font-size: 2.4em;
         text-shadow: 5px 5px 5px black;
     }
     header div#header figure{
@@ -169,8 +221,8 @@ div#showFooter{
         position: relative;
         top: 0px;
         width: 100%;
-        background: rgb(113, 154, 197);
-        border-top: 5px inset #527AA4;
+        background:  #199581;
+        border-top: 5px inset grey;
     }
 
     header nav.mostrar{
@@ -179,6 +231,7 @@ div#showFooter{
     header nav ul{
         line-height: 60px;
         padding: 10px;
+        max-height: none;
     }
     header nav ul li{
         display: block;
@@ -187,7 +240,7 @@ div#showFooter{
     div#btn-opciones{
         display: block;
         position: absolute;
-        top: 10px;
+        top: 13px;
         right: 10px;
         width: 50px;
     }

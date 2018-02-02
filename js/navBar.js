@@ -3,3 +3,9 @@ $('#btn-opciones').click(function(){
     $('#btn-opciones').toggleClass('change');
 });
 
+$('#showContact').click(function(){
+    $('#contact_form').toggle('slow');
+});
+$('#close_form').click(function(){
+    $('#contact_form').toggle('slow');
+});

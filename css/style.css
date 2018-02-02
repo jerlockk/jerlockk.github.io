@@ -42,10 +42,13 @@ header figure{
 }
 header h1{
     display: inline-block;
-    font-size: 2em; 
+    font-size: 2em;
     margin: 0px;
-    line-height: 100px; 
+    line-height: 100px;
     font-weight: lighter;
+}
+header a{
+    color: white;
 }
 
 header nav{
@@ -61,7 +64,7 @@ header nav ul{
     list-style: none;
     text-align: center;
     font-size: 1.5em;
-    line-height: 100px; 
+    line-height: 100px;
 }
 header ul li#select_home{
     font-family: 'icomoon';
@@ -69,13 +72,73 @@ header ul li#select_home{
 }
 header ul li#select_home:before{
     content: "\e927"
-} 
+}
 header ul li{
     display: inline-block;
     margin-right: 8px;
+    cursor: pointer;
 }
 div#btn-opciones{
     display: none;
+}
+div#contact_form{
+    display: none;
+    height: auto;
+    width: 260px;
+    background: #FDFDFD;
+    position: fixed;
+    right: 10px;
+    box-shadow: 8px 8px 8px 8px rgba(105, 105, 105, 0.83);
+}
+div#contact_form form div#email_image{
+    font-family: 'icomoon';
+    font-size: 8em;
+    text-align: center;
+    color: #007CFF;
+    background: #e6e6e6;
+}
+div#contact_form form div#email_image:before{
+    content: '\e91c';
+}
+div#contact_form form div#close_form{
+    font-family: 'icomoon';
+    font-size: 1.2em;
+    position: absolute;
+    right: 0px;
+    margin: 8px 8px;
+}
+div#contact_form form div#close_form:before{
+    content: "\e90b";
+    cursor: pointer;
+}
+div#contact_form form p{
+    margin: 0;
+    margin: 10px 10px;
+}
+div#contact_form form input,
+div#contact_form form textarea{
+    display: block;
+    margin: 40px 0;
+    border: none;
+    border-bottom: 2px solid grey;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3px;
+}
+div#contact_form form input#boton{
+    background: #ff9900;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 60%;
+}
+div#showFooter{
+    height: 100px;
+    width: 100px;
+    background: black;
 }
 @media screen and (max-width: 1000px){
     header nav{
@@ -95,6 +158,7 @@ div#btn-opciones{
         line-height: 0px;
         margin: 30px 0px 30px 50px;
         font-size: 1.5em;
+        text-shadow: 5px 5px 5px black;
     }
     header div#header figure{
         display: none;
@@ -108,6 +172,7 @@ div#btn-opciones{
         background: rgb(113, 154, 197);
         border-top: 5px inset #527AA4;
     }
+
     header nav.mostrar{
         visibility: visible;
     }
@@ -118,7 +183,7 @@ div#btn-opciones{
     header nav ul li{
         display: block;
     }
-    
+
     div#btn-opciones{
         display: block;
         position: absolute;
@@ -132,14 +197,14 @@ div#btn-opciones{
         background-color: #FDFDFD;
         margin: 9px 0;
         transition: transform 0.4s;
-    } 
+    }
     .change .barra-1 {
         -webkit-transform: rotate(-45deg) translate(-9px, -1px);
         transform: rotate(-45deg) translate(-9px, -1px);
-    } 
-    .change .barra-2 { 
+    }
+    .change .barra-2 {
         opacity: 0;
-    } 
+    }
     .change .barra-3 {
         -webkit-transform: rotate(45deg) translate(-18px, -8px);
         transform: rotate(45deg) translate(-18px, -8px);

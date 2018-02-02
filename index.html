@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>JM-Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="js/jquery.js"></script>
 </head>
 <body>
+
     <header>
         <div id="header">
             <figure><img src="" alt="logo"></figure>
-            <h1>JM-Developer</h1>
+            <a href="index.html"><h1>JM-Developer</h1></a>
         </div>
-        
+
         <nav>
             <ul>
                 <li id="select_home"></li>
                 <li>Perfil</li>
                 <li>Portafolio</li>
-                <li>Contacto</li>
+                <li id="showContact">Contacto</li>
             </ul>
         </nav>
     </header>
@@ -31,8 +32,23 @@
             <div class="barra-3"></div>
     </div>
     <br>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vero non hic, error optio libero veritatis delectus eum consectetur, tenetur magni nesciunt temporibus. Id fuga consequatur assumenda minima delectus voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, odio odit. Sunt, animi? Saepe eligendi natus error eum laboriosam, quod quibusdam ex consequuntur assumenda modi suscipit enim tempora accusamus eaque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde a iusto laudantium praesentium in commodi doloremque aperiam corrupti nesciunt deserunt exercitationem aut, omnis rem, nostrum repellendus consequatur accusamus, modi eos?</p>
-    
+
+    <div id="contact_form">
+        <form action="index.html" id="form1"name="form1" method="post">
+            <div id="email_image"></div>
+            <div id="close_form"></div>
+            <p>Contáctame</p>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" />
+            <input type="email" id="email" name="email" placeholder="Tu email">
+            <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+            <input type="submit" name="Submit" id="boton" value="ENVIAR" />
+        </form>
+    </div>
+    <div id="showFooter"></div>
+    <footer>
+
+    </footer>
+
 <script src="js/navBar.js"></script>
 </body>
 </html>

@@ -95,8 +95,8 @@ div#contact_form form div#email_image{
     font-family: 'icomoon';
     font-size: 8em;
     text-align: center;
-    color: #007CFF;
-    background: #e6e6e6;
+    color: #107363;
+    background: white;
 }
 div#contact_form form div#email_image:before{
     content: '\e91c';
@@ -127,7 +127,8 @@ div#contact_form form textarea{
     padding-bottom: 3px;
 }
 div#contact_form form input#boton{
-    background: #ff9900;
+    background: #242520;
+    color: white;
     border: none;
     padding: 6px;
     border-radius: 6px;
@@ -146,26 +147,54 @@ div.showFooter{
     left: -35px;
     text-align: center;
     font-family: 'icomoon';
-    font-size: 2.8em;
-    color:#007CFF;
-
+    font-size: 2.5em;
+    color: #107363;
 }
 div.showFooter:before{
     content: '\f04f';
     position: relative;
-    top: 18px;
-    right: -10px;
+    top: 19px;
+    right: -8px;
 }
 .circleBig{
     position: fixed;
     transition: all 0.4s linear;
-    height: 420px;
-    width: 420px;
+    height: 390px;
+    width: 390px;
     border-radius: 50%;
+    border: 5px solid #00E6C1;
     bottom: -85px;
     left: -85px;
     color: white;
     background: white;
+}
+div.social{
+    display: inline-block;
+    right: 100px;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    font-family: 'icomoon';
+    font-size: 4em;
+    color: #107363;
+}
+div#social_1{
+    position: absolute;
+    top: 150px;
+    right: 35px;
+    font-size: 3em;
+}
+div#social_1:before{
+    content: '\e924';
+}
+div#social_2{
+    position: absolute;
+    top: 140px;
+    right: 155px;
+}
+div#social_2:before{
+
+    content: '\e902';
 }
 footer{
     background: #FDFDFD;
@@ -180,18 +209,7 @@ footer p{
     bottom: 0;
     margin-bottom: 10px;
 }
-/*div#number, div#email{
-    height: 120px;
-    width: 320px;
-    background: #FDFDFD;
-    border-radius: 30%;
-    margin: 50px;
 
-    text-align: center;
-    font-family: 'icomoon';
-    font-size: 2.8em;
-    color:#007CFF;
-}*/
 @media screen and (max-width: 1000px){
     header nav{
         width: 45%;
@@ -209,7 +227,7 @@ footer p{
     header div#header h1{
         line-height: 0px;
         margin: 35px 0px 30px 50px;
-        font-size: 2.4em;
+        font-size: 2.2em;
         text-shadow: 5px 5px 5px black;
     }
     header div#header figure{

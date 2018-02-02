@@ -9,7 +9,7 @@ $('#showContact').click(function(){
 $('#close_form').click(function(){
     $('#contact_form').toggle('slow');
 });
-$('#este').hover(function(){
+$('#contect_social').hover(function(){
     $(this).removeClass('showFooter');
 },  function (){
     $(this).addClass('showFooter');

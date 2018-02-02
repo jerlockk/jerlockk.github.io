@@ -1,5 +1,5 @@
 $('#btn-opciones').click(function(){
-    $('nav').toggle('fast');
+    $('nav').toggle(500);
     $('#btn-opciones').toggleClass('change');
 });
 

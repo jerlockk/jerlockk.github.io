@@ -44,7 +44,7 @@ header h1{
     display: inline-block;
     font-size: 2.8em;
     margin: 0px;
-    line-height: 100px;
+    line-height: 90px;
     font-weight: lighter;
 }
 header a{
@@ -64,7 +64,7 @@ header nav ul{
     list-style: none;
     text-align: center;
     font-size: 2em;
-    line-height: 100px;
+    line-height: 90px;
     max-height: 100px;
 }
 header ul li#select_home{
@@ -85,15 +85,15 @@ div#btn-opciones{
 div#contact_form{
     display: none;
     height: auto;
-    width: 260px;
+    width: 250px;
     background: #FDFDFD;
     position: absolute;
     right: 10px;
-    box-shadow: 8px 8px 8px 8px rgba(105, 105, 105, 0.83);
+    box-shadow: 6px 6px 6px 6px rgba(105, 105, 105, 0.30);
 }
 div#contact_form form div#email_image{
     font-family: 'icomoon';
-    font-size: 8em;
+    font-size: 6em;
     text-align: center;
     color: #107363;
     background: white;
@@ -137,7 +137,7 @@ div#contact_form form input#boton{
     cursor: pointer;
     width: 60%;
 }
-div.showFooter{
+div.showSocial{
     height: 120px;
     width: 120px;
     background: #FDFDFD;
@@ -150,7 +150,7 @@ div.showFooter{
     font-size: 2.5em;
     color: #107363;
 }
-div.showFooter:before{
+div.showSocial:before{
     content: '\f04f';
     position: relative;
     top: 19px;
@@ -158,9 +158,9 @@ div.showFooter:before{
 }
 .circleBig{
     position: fixed;
-    transition: all 0.4s linear;
-    height: 390px;
-    width: 390px;
+    transition: all 0.3s linear;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     border: 5px solid #00E6C1;
     bottom: -85px;
@@ -180,8 +180,8 @@ div.social{
 }
 div#social_1{
     position: absolute;
-    top: 150px;
-    right: 35px;
+    top: 120px;
+    right: 10px;
     font-size: 3em;
 }
 div#social_1:before{
@@ -189,12 +189,26 @@ div#social_1:before{
 }
 div#social_2{
     position: absolute;
-    top: 140px;
-    right: 155px;
+    top: 110px;
+    right: 125px;
 }
 div#social_2:before{
 
     content: '\e902';
+}
+
+p#myEmail, 
+p#myNumber{
+    color: black;
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    text-align: center;
+    font-size: 1.28em;
+    display: none;
+}
+p#myNumber{
+    top: 115px;
 }
 footer{
     background: #FDFDFD;

@@ -30,6 +30,7 @@ header{
     width: 100%;
     position: relative;
     color: white;
+    background: #107363;
 }
 header div#header{
     width: 40%;
@@ -65,7 +66,7 @@ header nav ul{
     text-align: center;
     font-size: 2em;
     line-height: 90px;
-    max-height: 100px;
+    max-height: 90px;
 }
 header ul li#select_home{
     font-family: 'icomoon';
@@ -90,6 +91,7 @@ div#contact_form{
     position: absolute;
     right: 10px;
     box-shadow: 6px 6px 6px 6px rgba(105, 105, 105, 0.30);
+    z-index: 999;
 }
 div#contact_form form div#email_image{
     font-family: 'icomoon';
@@ -137,12 +139,15 @@ div#contact_form form input#boton{
     cursor: pointer;
     width: 60%;
 }
-div.showSocial{
+footer#contect_social{
+    position: fixed;
+    z-index: 999;
+}
+footer.showSocial{
     height: 120px;
     width: 120px;
     background: #FDFDFD;
     border-radius: 50%;
-    position: fixed;
     bottom: -35px;
     left: -35px;
     text-align: center;
@@ -150,14 +155,13 @@ div.showSocial{
     font-size: 2.5em;
     color: #107363;
 }
-div.showSocial:before{
+footer.showSocial:before{
     content: '\f04f';
     position: relative;
     top: 19px;
     right: -8px;
 }
 .circleBig{
-    position: fixed;
     transition: all 0.3s linear;
     height: 350px;
     width: 350px;
@@ -197,7 +201,7 @@ div#social_2:before{
     content: '\e902';
 }
 
-p#myEmail, 
+p#myEmail,
 p#myNumber{
     color: black;
     position: absolute;
@@ -210,19 +214,14 @@ p#myNumber{
 p#myNumber{
     top: 115px;
 }
-footer{
-    background: #FDFDFD;
+
+div#slider_sections{
+    position: absolute;
+    top: 90px;
     width: 100%;
-    height: 160px;
-    position: absolute;
-    bottom: 0px;
+    z-index: 99;
 }
-footer p{
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;
-}
+
 
 @media screen and (max-width: 1000px){
     header nav{
@@ -236,7 +235,7 @@ footer p{
 @media screen and (max-width: 800px){
     header div#header{
         width: 80%;
-        border: none;
+        border: none !important;
     }
     header div#header h1{
         line-height: 0px;
@@ -253,8 +252,10 @@ footer p{
         position: relative;
         top: 0px;
         width: 100%;
-        background:  #199581;
-        border-top: 5px inset grey;
+        background: #199581;
+        z-index: 999;
+        border: none !important;
+        border-top: 5px inset grey !important;
     }
 
     header nav.mostrar{

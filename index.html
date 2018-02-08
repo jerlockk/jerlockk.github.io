@@ -19,9 +19,9 @@
 
         <nav id="navBar_">
             <ul>
-                <li id="select_home" onClick="nav_section('home')"></li>
-                <li onClick="nav_section('aboutme')">Perfil</li>
-                <li onClick="nav_section('port')">Portafolio</li>
+                <li class="buttons" id="select_home" onClick="nav_section('home')"></li>
+                <li class="buttons" onClick="nav_section('aboutme')">Perfil</li>
+                <li class="buttons" onClick="nav_section('port')">Portafolio</li>
                 <li id="showContact">Contacto</li>
             </ul>
         </nav>
@@ -44,15 +44,15 @@
             <input type="submit" name="Submit" id="boton" value="ENVIAR" />
         </form>
     </div>
-    <footer class="circleBig showSocial" id="contect_social">
-        <div class="social" id="social_1"></div>
-        <p id="myEmail">micorreo<br>@gmail.com</p>
-        <div class="social" id="social_2"></div>
-        <p id="myNumber">+57 **********</p>
-    </footer>
 
     <div id="slider_sections">
         <section id="home" style="display:block">
+            <footer class="circleBig showSocial" id="contect_social">
+                <div class="social" id="social_1"></div>
+                <p id="myEmail">micorreo<br>@gmail.com</p>
+                <div class="social" id="social_2"></div>
+                <p id="myNumber">+57 **********</p>
+            </footer>
         </section>
 
         <section id="aboutme">
@@ -62,19 +62,19 @@
         <section id="port">
             <div id="pages_developed">
                 <ul>
-                    <li><img src="images/page1.png" alt="image"></li>
-                    <li><img src="images/page1.png" alt="image"></li>
-                    <li><img src="images/page1.png" alt="image"></li>
-                    <li><img src="images/page1.png" alt="image"></li>
-                    <li><img src="images/page1.png" alt="image"></li>
-                    <li><img src="images/page1.png" alt="image"></li>
+                    <li><img class="pages" src="images/page1.png" alt="image"></li>
+                    <li><img class="pages" src="images/page1.png" alt="image"></li>
+                    <li><img class="pages" src="images/page1.png" alt="image"></li>
+                    <li><img class="pages" src="images/page1.png" alt="image"></li>
+                    <li><img class="pages" src="images/page1.png" alt="image"></li>
+                    <li><img class="pages" src="images/page1.png" alt="image"></li>
                 </ul>
             </div>
         </section>
     </div>
 
 
-<script src="js/script.js"></script>
-<script src="js/sections.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sections.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ function colors(color) {
         backg_body = "#107363";
         borde = "2px solid white";
     }else {
-        backg_body = "#d8d9d9";
+        backg_body = "#c9cccc";
         borde = "none";
     }
     fondo.style.background = backg_body;

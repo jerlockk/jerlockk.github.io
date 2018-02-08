@@ -3,6 +3,13 @@ $('#btn-opciones').click(function(){
     $('#btn-opciones').toggleClass('change');
 });
 
+$('.buttons').click(function (){
+    if (window.innerWidth < 800){
+        $('nav').toggle(500);
+        $('#btn-opciones').toggleClass('change');
+    };
+});
+
 $('#showContact').click(function(){
     $('#contact_form').toggle('slow');
     if (window.innerWidth < 800){
@@ -52,3 +59,4 @@ contenedor.addEventListener("mouseout", function () {
 },  function (){
     $(this).addClass('showFooter');
 });*/
+/*****************************************************************/

@@ -219,7 +219,28 @@ div#slider_sections{
     position: absolute;
     top: 90px;
     width: 100%;
+    height: 85%;
     z-index: 99;
+}
+div#slider_sections section{
+    display: none;
+}
+div#slider_sections section div#pages_developed{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /* background: red; */
+}
+div#slider_sections section div#pages_developed ul{
+}
+div#slider_sections section div#pages_developed ul li {
+    display: inline-block;
+    margin: 1.5%;
+    padding: 0%;
+    width: 30%;
+}
+div#slider_sections section div#pages_developed ul li a img{
+    width: 100%;
 }
 
 

@@ -12,8 +12,8 @@ function colors(color) {
     var fondo = document.getElementsByTagName('body')[0];
     var bordeNav = document.getElementById('navBar_');
     var bordeTitte = document.getElementById('header');
-    search = document.getElementById(sections[i]);
-    if (color == "home") {
+    search = document.getElementById(sections[color]);
+    if (sections[color] == "home") {
         backg_body = "#107363";
         borde = "2px solid white";
     }else {
@@ -28,15 +28,12 @@ function colors(color) {
 
 function nav_section(nav) {
     for (var i = 0; i < 3; i++) {
-        console.log('I', i);
         search = document.getElementById(sections[i]);
         search.style.display = 'none';
         if (nav == sections[i]) {
             search.style.display = 'block';
-            var color = sections[i];
-            // arreglar el color hay que sacar el valor de la variable i
+            var color = i;
         }
     }
     colors(color);
-    console.log('COLOR', color)
 }

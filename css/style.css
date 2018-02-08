@@ -229,18 +229,30 @@ div#slider_sections section div#pages_developed{
     position: absolute;
     width: 100%;
     height: auto;
-    /* background: red; */
 }
-div#slider_sections section div#pages_developed ul{
+div#slider_sections section#port div#pages_developed ul{
+    padding: 0%;
+    margin: 0%;
 }
-div#slider_sections section div#pages_developed ul li {
+div#slider_sections section#port div#pages_developed ul li {
     display: inline-block;
     margin: 1.5%;
     padding: 0%;
     width: 30%;
+    height: auto;
+    background: #588f7e;
+    border-radius: 2%;
 }
-div#slider_sections section div#pages_developed ul li a img{
-    width: 100%;
+
+div#slider_sections section#port div#pages_developed ul li img{
+    width: 90%;
+    margin: 5%;
+    height: 90%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+div#slider_sections section#port div#pages_developed ul li img:hover{
+    opacity: 1;
 }
 
 
@@ -315,5 +327,14 @@ div#slider_sections section div#pages_developed ul li a img{
     .change .barra-3 {
         -webkit-transform: rotate(45deg) translate(-18px, -8px);
         transform: rotate(45deg) translate(-18px, -8px);
+    }
+    div#slider_sections section#port div#pages_developed ul li {
+        display: inline-block;
+        margin: 7.5%;
+        padding: 0%;
+        width: 85%;
+    }
+    div#slider_sections section#port div#pages_developed ul li a img{
+        width: 100%;
     }
 }

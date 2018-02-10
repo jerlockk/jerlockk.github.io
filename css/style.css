@@ -240,11 +240,11 @@ div#slider_sections section#port div#pages_developed ul li {
     padding: 0%;
     width: 30%;
     height: auto;
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 2%;
     position: relative;
     cursor: pointer;
-    box-shadow: 4px 4px 4px 4px rgba(77, 77, 77, 0.66);
+    box-shadow: 6px 6px 6px  rgba(77, 77, 77, 0.66);
 }
 div#slider_sections section#port div#pages_developed ul li:before{
     content: 'WebSites';
@@ -254,11 +254,11 @@ div#slider_sections section#port div#pages_developed ul li:before{
     transform: translate(-50%, -50%);
     font-family: 'whire';
     font-size: 2em;
-    font-weight: normal;
+    font-weight: bolder;
     color: black;
     z-index: 99;
 }
-div#slider_sections section#port div#pages_developed ul li:after{
+/*div#slider_sections section#port div#pages_developed ul li:after{
     content: '';
     position: absolute;
     top: 50%;
@@ -266,15 +266,21 @@ div#slider_sections section#port div#pages_developed ul li:after{
     transform: translate(-50%, -50%);
     height: 50%;
     width: 40%;
-    background: red;
+    background: #00aeb4;
     z-index: 9;
-}
+}*/
 
-div#slider_sections section#port div#pages_developed ul li img{
+div#slider_sections section#port div#pages_developed ul li img.pages{
     width: 90%;
     margin: 5%;
     height: 90%;
-    opacity: 0;
+    display: none;
+}
+div#slider_sections section#port div#pages_developed ul li img.rombo{
+    width: 60%;
+    height: 60%;
+    margin: 0 20%;
+    z-index: 99;
 }
 
 @media screen and (max-width: 1000px){

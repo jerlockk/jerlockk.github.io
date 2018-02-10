@@ -254,7 +254,7 @@ div#slider_sections section#port div#pages_developed ul li:before{
     transform: translate(-50%, -50%);
     font-family: 'whire';
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: normal;
     color: black;
     z-index: 99;
 }

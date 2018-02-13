@@ -54,9 +54,9 @@ contenedor.addEventListener("mouseout", function () {
     contenedor.classList.add('showSocial');
 });
 
-/*$('#contect_social').hover(function(){
-    $(this).removeClass('showFooter');
-},  function (){
-    $(this).addClass('showFooter');
-});*/
 /*****************************************************************/
+$('.element_pages').hover(function(){
+    $(this).addClass('disable');
+},  function (){
+    $(this).removeClass('disable');
+});
